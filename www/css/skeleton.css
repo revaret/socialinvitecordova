@@ -396,6 +396,7 @@ hr {
 .div_heading{
     background: rgb(219, 216, 216);
     text-align: center;
+    margin-top: 25px;
 }
 .img_button{
   height: 100px;
