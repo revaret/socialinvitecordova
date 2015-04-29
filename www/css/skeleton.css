@@ -395,6 +395,7 @@ hr {
   clear: both; }
 .div_heading{
     background: rgb(219, 216, 216);
+    text-align: center;
 }
 .img_button{
   height: 100px;
@@ -411,7 +412,23 @@ hr {
   float: left;
   margin-left: 35px;
 }
-
+.div_social{
+  display: inline-block;
+  text-align: center;
+  margin: 10px 0;
+  width: 100%;
+}
+.div_social_inner{
+  display: inline-block;
+  width: 25%;
+  padding: 0 20px;
+  text-align: center;
+}
+.div_social img{
+  display: inline-block;
+  width: 100%;
+}
+.div_social button{width: 35%; margin: 0; padding: 0;}
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*

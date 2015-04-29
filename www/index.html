@@ -28,21 +28,20 @@
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <body>
         <div class="div_heading"><h3>Invite to social network</h3></div>
-        <div class="div_facebook_img">
-            <img  class="img_button" src="../img/facebook-icon-black.png">
+        <div class="div_social">
+            <div class="div_social_inner"><img  src="./img/facebook-icon-black.png"></div>
+            <div class="div_social_inner"><img src="./img/80-google-plus-512.png"></div>
         </div>
-        <div class="div_google_img">
-            <img class="img_button" src="../img/80-google-plus-512.png">
-        </div>
+        <div class="div_social">
         <button id="fb_invite" class="button" type="button">Facebook</button>
         <script>
             $('#fb_invite').click(function() {
-                var browserRef = window.open( "https://www.facebook.com/dialog/apprequests?app_id=691865640920971&message=Checkout this awesome App!&redirect_uri=http://staging.hippocrat.us/", '_blank');
+                var browserRef = window.open( "https://www.facebook.com/dialog/apprequests?app_id=980798898620237&message=Checkout this awesome App!&redirect_uri=http://www.spritle.com/", '_blank');
                 
                 browserRef.addEventListener('loadstart', function (event) {
                     console.log('something')
                     console.log(event)
-                    if ((event.url).indexOf("http://staging.hippocrat.us/") === 0) {
+                    if ((event.url).indexOf("http://www.spritle.com/") === 0) {
                         console.log('dhvcjhdvfjdhvfj')
                          browserRef.close();
                         }
@@ -55,7 +54,7 @@
         <button id="gp_invite" class="button google" type="button">Google</button>
         <script>
             $('#gp_invite').click(function() {
-                var browserRef = window.open( "https://plus.google.com/share?url=http://staging.hippocrat.us/", '_blank');
+                var browserRef = window.open( "https://plus.google.com/share?url=http://www.spritle.com/", '_blank');
                 browserRef.addEventListener('loadstart', function (event) {
                     console.log(event.url)
                     if ((event.url).indexOf("https://plus.google.com/app/basic/stream") === 0) {
@@ -71,6 +70,7 @@
                 })
             });
         </script>
+        </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
